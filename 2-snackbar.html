@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 3</title>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-Cv_Nra3T.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/assets/styles-DxI44kYm.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-BbSUbo7J.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-10/assets/2-snackbar-BQ9AtvFX.js"></script>
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-B7nqoh4Y.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-C1gPI-5C.css">
   </head>
   <body>
     <header class="header">
@@ -33,29 +37,33 @@
 
     <main>
       <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 3
-        </h1>
-        <a class="back-link" href="./index.html">Go back</a>
+        <form class="form">
+  <label>
+    Delay (ms)
+    <input type="number" name="delay" required />
+  </label>
 
-      </div>
+  <fieldset>
+    <legend>State</legend>
+    <label>
+      <input type="radio" name="state" value="fulfilled" required />
+      Fulfilled
+    </label>
+    <label>
+      <input type="radio" name="state" value="rejected" required />
+      Rejected
+    </label>
+  </fieldset>
+
+  <button type="submit">Create notification</button>
+</form>
+      
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
+     <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"
+  ></script>
 
   </body>
 </html>
